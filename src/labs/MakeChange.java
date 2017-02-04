@@ -68,19 +68,27 @@ public class MakeChange {
 		
 		
 		
-		System.out.print("Change: ");
+		System.out.print("Change: $");
 		System.out.printf("%.2f", change);
 		System.out.println();
 		System.out.println("===================");
-		System.out.println("Twentys   " + twenty);
-		System.out.println("Tens      " + ten);
-		System.out.println("Fives     " + five);
-		System.out.println("Dollars   " + one);
-		System.out.println("Quarters  " + quarter);		
-		System.out.println("Dimes     " + dime);
-		System.out.println("Nickels   " + nickel);
-		System.out.println("Pennies   " + pennies);
-	}
+		if (twenty > 0)
+			System.out.println("Twentys   " + twenty);
+		if (ten > 0)	
+			System.out.println("Tens      " + ten);
+		if (five > 0)	
+			System.out.println("Fives     " + five);
+		if (one > 0)
+			System.out.println("Ones      " + one);
+		if (quarter > 0)
+			System.out.println("Quarters  " + quarter);	
+		if (dime > 0)
+			System.out.println("Dimes     " + dime);
+		if (nickel > 0)
+			System.out.println("Nickels   " + nickel);
+		if (pennies > 0)
+			System.out.println("Pennies   " + pennies);
+		}
 
 }
 		
