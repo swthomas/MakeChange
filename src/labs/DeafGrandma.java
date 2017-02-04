@@ -50,9 +50,10 @@ public class DeafGrandma {
 	
 	
 	public static boolean isUpperCase(String s) {
-			
+
+		
 			for (int i = 0; i < s.length(); i++) {
-				if (!Character.isUpperCase(s.charAt(i))) {
+				if (!Character.isUpperCase(s.charAt(i)) || Character.isWhitespace(s.charAt(i))) {
 					return false;
 				}
 			}
