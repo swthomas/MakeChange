@@ -43,29 +43,27 @@ public class MakeChange {
 		int pennies = 0;
 				
 		twenty = (int) (change1 / 20.00);
-		change1 = change1 - (twenty * 10);
+		change1 = change1 % 20;
 		
 		ten = (int) (change1 / 10.00);
-		change1 = change1 - (ten * 10);
+		change1 = change1 % 10;
 		
 		five = (int) (change1 / 5.00);
-		change1 = change1 - (five * 5);
+		change1 = change1 % 5;
 		
 		one = (int) (change1 / 1.00);
-		change1 = change1 - (one * 1);
+		change1 = change1 % 1;
 				
 		quarter = (int) (change1 / .25);
-		change1 = change1 - (quarter * .25);
+		change1 = change1 % .25;
 				
 		dime = (int) (change1 / .10);
-		change1 = change1 - (dime * .10);
+		change1 = change1 % .10;
 				
 		nickel = (int) (change1 / .05);
-		change1 = change1 - (nickel * .05);
+		change1 = change1 % .05;
 
 		pennies = (int) Math.round(change1 / .01);
-		change1 = change1 - (pennies * .01);
-		
 		
 		
 		System.out.print("Change: $");
